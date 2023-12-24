@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="46dp"
+        android:text="Menú del Restaurante"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPlatillos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonPastel"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:text="Pastel de Choclo $12,000" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCazuela"
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:text="Cazuela $10,000" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxPropina"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupPlatillos"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Incluir propina (10%)" />
+
+    <Button
+        android:id="@+id/btnCalcularMonto"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxPropina"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="71dp"
+        android:text="Calcular Montos" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/btnCalcularMonto"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>
